@@ -19,14 +19,16 @@ export default function Contact({ userRef, listing }) {
         getLandlord()
     }, [userRef])
 
-    function onChange(e){
+    function onChange(e) {
         setMessage(e.target.value)
     }
     return (
         <>{landlord !== null &&
             (
                 <div className='flex flex-col w-full'>
-                    <p>Contact {landlord.name} for the {listing.name.toLowerCase()}</p>
+                    <p>
+                        Contact {landlord.name} for the {listing.name.toLowerCase()}
+                        </p>
                     <div className='mt-3 mb-6'>
                         <textarea name="message" id="message" rows="2" value={message} onChange={onChange} className='w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600'></textarea>
                     </div>
