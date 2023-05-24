@@ -40,7 +40,7 @@ export default function Slider() {
     listings && (
         <>
        <Swiper slidesPerView={1} navigation pagination={{type: "progressbar"}} effect="fade" modules={[EffectFade]} autoplay={{delay: 3000}}>
-       {listings.map((data, id)=>(
+       {listings.map(({data, id})=>(
             <SwiperSlide key={id} onClick={()=>navigate(`/category/${data.type}/${id}`)}>
                 <div style={{background: `url(${data.imgUrls[0]}) center, no-repeat`, backgroundSize: "cover",}} className=' relative w-full h-[300px] overflow-hidden'>
 

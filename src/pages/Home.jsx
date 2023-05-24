@@ -27,7 +27,7 @@ export default function Home() {
         });
         setOfferListings(listings)
       } catch (error) {
-        
+        console.log(error);
       }
     }
     fetchListings()
@@ -55,7 +55,7 @@ export default function Home() {
         });
         setRentListings(listings)
       } catch (error) {
-        
+        console.log(error);
       }
     }
     fetchListings()
