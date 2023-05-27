@@ -208,7 +208,7 @@ export default function EditListing() {
     <main className="max-w-md px-2 mx-auto">
       <h1 className="text-3xl text-center mt-6 font-bold">Edit Listing</h1>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} id="edit_listing">
         <p className="text-lg mt-6 font-semibold">Sell / Rent</p>
         <div className="flex">
           <button
