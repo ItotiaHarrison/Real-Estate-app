@@ -6,12 +6,12 @@ import {getFirestore} from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDzMCPxvILX7O-m4AGKy2M6_U4AzKTVi_Y",
-  authDomain: "real-estate-react-25df8.firebaseapp.com",
-  projectId: "real-estate-react-25df8",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: "real-estate-react-25df8.appspot.com",
   messagingSenderId: "142556388773",
-  appId: "1:142556388773:web:f6a4543c1de32f75245c4c"
+  appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
